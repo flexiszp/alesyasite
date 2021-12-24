@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Header/Header.jsx';
-import Profile from './Components/Profile.jsx';
+import Profile from './Components/Profile/Profile.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 
 
