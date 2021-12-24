@@ -64,6 +64,7 @@ grid-template-rows: 250px 1fr 150px 100px;
   border: 2px dashed gray;
   padding: 5px;
   border-radius: 7px;
+  background-color: rgb(255, 127, 227);
 
   text-align: center;
   
@@ -75,6 +76,7 @@ grid-template-rows: 250px 1fr 150px 100px;
   border: 2px dashed gray;
   padding: 5px;
   border-radius: 7px;
+  background-color: rgb(165, 127, 255);
 
   text-align: center;
 
@@ -86,6 +88,7 @@ grid-template-rows: 250px 1fr 150px 100px;
   border: 2px dashed gray;
   padding: 5px;
   border-radius: 7px;
+  background-color: rgb(242, 255, 127);
 
   text-align: center;
 
@@ -97,6 +100,7 @@ grid-template-rows: 250px 1fr 150px 100px;
   border: 2px dashed gray;
   padding: 5px;
   border-radius: 7px;
+  background-color: aquamarine;
 
   text-align: center;
 }
