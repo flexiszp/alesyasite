@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Components/Header/Header.jsx';
 import Profile from './Components/Profile.jsx';
-import Navbar from './Components/Navbar.jsx';
+import Navbar from './Components/Navbar/Navbar.jsx';
 
 
 function App() {
