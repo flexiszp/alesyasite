@@ -5,11 +5,11 @@ const Navbar = () => {
     return (
         <nav className={s.Nav}>
 
-            <div className={s.item}>Главная</div>
-            <div className={s.item}>Обратная связь</div>
-            <div className={s.item}>Стоимость</div>
-            <div className={s.item}>Контакты</div>
-            <div className={s.item}>Отзывы</div>
+            <div className={s.item}><a href='/main'>Главная</a></div>
+            <div className={s.item}><a href='/feedback'>Обратная связь</a></div>
+            <div className={s.item}><a href='/prices'>Стоимость</a></div>
+            <div className={s.item}><a href='/contacts'>Контакты</a></div>
+            <div className={s.item}><a href='/comments'>Отзывы</a></div>
 
 
         </nav>

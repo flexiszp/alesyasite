@@ -1,117 +1,94 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .wrapper {
-
-display: grid;
-width: 1020px;
-padding: 25px;
-
-grid-column-gap: 5px;
-grid-row-gap: 5px;
-
-
-grid-template-areas:
-"h h h"
-"n c c"
-"new new1 new2"
-"fot fot fot";
-
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 250px 1fr 150px 100px;
-
+    display: grid;
+    width: 1020px;
+    padding: 25px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-areas: "h h h" "n c c" "new new1 new2" "fot fot fot";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 1fr 150px 100px;
 }
 
 .app-wrapper-content {
     grid-area: c;
     background-color: antiquewhite;
     padding: 10px;
-    border: 2px dashed gray;
+    border: 2px dashed black;
     border-radius: 7px;
-
     text-align: justify;
-
-  }
+}
 
 .New {
-
-  grid-area: new;
-  border: 2px dashed gray;
-  padding: 5px;
-  border-radius: 7px;
-  background-color: rgb(255, 127, 227);
-
-  text-align: center;
-
-    }
+    grid-area: new;
+    border: 2px dashed gray;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(255, 127, 227);
+    text-align: center;
+}
 
 .New1 {
-
-  grid-area: new1;
-  border: 2px dashed gray;
-  padding: 5px;
-  border-radius: 7px;
-  background-color: rgb(165, 127, 255);
-
-  text-align: center;
-
+    grid-area: new1;
+    border: 2px dashed gray;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(165, 127, 255);
+    text-align: center;
 }
 
 .New2 {
-
-  grid-area: new2;
-  border: 2px dashed gray;
-  padding: 5px;
-  border-radius: 7px;
-  background-color: rgb(242, 255, 127);
-
-  text-align: center;
-
+    grid-area: new2;
+    border: 2px dashed gray;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(242, 255, 127);
+    text-align: center;
 }
 
 .footer {
-
-  grid-area: fot;
-  border: 2px dashed gray;
-  padding: 5px;
-  border-radius: 7px;
-  background-color: aquamarine;
-
-  text-align: center;
+    grid-area: fot;
+    border: 2px dashed gray;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: aquamarine;
+    text-align: center;
 }

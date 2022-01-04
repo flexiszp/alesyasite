@@ -1,12 +1,7 @@
 .Hex {
-  
     grid-area: h;
-    
-    border: 2px dashed gray;
+    border: 2px dashed black;
     border-radius: 7px;
     padding: 5px;
-  
     text-align: center;
-    
-         
-        }
+}

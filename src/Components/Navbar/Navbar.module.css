@@ -1,14 +1,21 @@
 .Nav {
-  grid-area: n;
-  background-color: white;
-  padding: 10px;
-  border: 2px dashed gray;
-  border-radius: 7px;
-  font-size: 16px;
-  background-color: rgb(127, 136, 255);
-    }
+    grid-area: n;
+    background-color: white;
+    padding: 10px;
+    border: 2px dashed black;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: lightgray;
+}
 
 .item {
+    color: black;
+}
 
-  color: black;
+a:hover {
+    color: yellowgreen;
+}
+
+a:focus {
+    color: red;
 }
