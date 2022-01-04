@@ -8,16 +8,19 @@ import Dialogs from './Components/Dialogs/Dialogs.jsx';
 function App() {
   return (
     <div className="wrapper">
+
      <Header />
      <Navbar />
-     <Profile />
-     <Dialogs />
+     {/*<div class='app-wrapper-content'><Dialogs /></div>*/}
+     <div class='app-wrapper-content'> <Profile /></div>
+
      <div className='New'>Персональная консультация </div>
      <div className='New1'>Подбор персонала </div>
      <div className='New2'>Социальная поддержка</div>
      <div className='footer'>Контент футер</div>
+
      </div>
-  );
+  )
 }
 
 

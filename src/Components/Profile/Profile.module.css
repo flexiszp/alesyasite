@@ -1,17 +1,3 @@
-.Prof {
-    grid-area: p;
-    background-color: antiquewhite;
-    padding: 10px;
-    border: 2px dashed gray;
-    border-radius: 7px;
-  
-    text-align: justify;
-    
-  }
-
-  .item {
-    
-    color: rgb(156, 21, 21);
-    font-weight: bold;
-    
-  }
+.item {
+  color: red;
+}
