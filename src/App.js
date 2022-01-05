@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.jsx';
 import Profile from './Components/Profile/Profile.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Dialogs from './Components/Dialogs/Dialogs.jsx';
+import Contacts from './Components/Contacts/Contacts';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
@@ -22,8 +23,9 @@ function App() {
 		
 		<Routes>
 			
-			<Route path='/Profile' element={<Profile />} />
+			<Route path='/Main' element={<Profile />} />
 			<Route path='/Dialogs' element={<Dialogs />} />
+			<Route path='/Contacts' element={<Contacts />} />
 			{/* <Route path='*' element={<Notfoundpage />} /> */}
 			
 		</Routes>

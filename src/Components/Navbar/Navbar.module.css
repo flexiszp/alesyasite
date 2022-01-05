@@ -2,10 +2,9 @@
     grid-area: n;
     background-color: white;
     padding: 10px;
-    border: 2px dashed black;
-    border-radius: 7px;
+    border: 1px dashed black;
     font-size: 16px;
-    background-color: lightgray;
+    background-color: gainsboro;
 }
 
 .item {
@@ -13,9 +12,9 @@
 }
 
 a:hover {
-    color: yellowgreen;
+    color: red;
 }
 
 a:focus {
-    color: red;
+    color: green;
 }

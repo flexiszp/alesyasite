@@ -49,50 +49,45 @@
     "new new1 new2" 
     "fot fot fot";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 1fr 150px 100px;
+    grid-template-rows: 250px 1fr 150px 80px;
 }
 
 .app-wrapper-content {
     grid-area: c;
-    background-color: antiquewhite;
+    background-color: gainsboro;
     padding: 10px;
-    border: 2px dashed gray;
-    border-radius: 7px;
+    border: 1px dashed black;
     text-align: justify;
 }
 
 .New {
     grid-area: new;
-    border: 2px dashed gray;
+    border: 1px dashed black;
     padding: 5px;
-    border-radius: 7px;
     background-color: rgb(255, 127, 227);
     text-align: center;
 }
 
 .New1 {
     grid-area: new1;
-    border: 2px dashed gray;
+    border: 1px dashed black;
     padding: 5px;
-    border-radius: 7px;
     background-color: rgb(165, 127, 255);
     text-align: center;
 }
 
 .New2 {
     grid-area: new2;
-    border: 2px dashed gray;
+    border: 1px dashed black;
     padding: 5px;
-    border-radius: 7px;
     background-color: rgb(242, 255, 127);
     text-align: center;
 }
 
 .footer {
     grid-area: fot;
-    border: 2px dashed gray;
+    border: 1px dashed black;
     padding: 5px;
-    border-radius: 7px;
     background-color: aquamarine;
     text-align: center;
 }
