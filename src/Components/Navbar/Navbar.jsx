@@ -1,18 +1,34 @@
 import React from 'react';
 import s from './Navbar.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <nav className={s.Nav}>
 
-            <div className={s.item}><Link to='/Main'>Главная</Link></div>
-            <div className={s.item}><Link to='/Articles'>Статьи</Link></div>
-            <div className={s.item}><Link to='/Prices'>Стоимость</Link></div>
-            <div className={s.item}><Link to='/Contacts'>Контакты</Link></div>
-            <div className={s.item}><Link to='/Knowlege'>База знаний</Link></div>
-            <div className={s.item}><Link to='/Comments'>Популярные вопросы</Link></div>
+            <div className={s.item}>
+                <NavLink exact to='/Main' className = { navData => navData.isActive ? s.active : s.item }>Главная</NavLink>
+            </div>
+            
+            <div className={s.item}>
+                <NavLink exact to='/Articles' className = { navData => navData.isActive ? s.active : s.item }>Статьи</NavLink>
+            </div>
 
+            <div className={s.item}>
+                <NavLink exact to='/Prices' className = { navData => navData.isActive ? s.active : s.item }>Стоимость</NavLink>
+            </div>
+            
+            <div className={s.item}>
+                <NavLink exact to='/Contacts' className = { navData => navData.isActive ? s.active : s.item }>Контакты</NavLink>
+            </div>
+
+            <div className={s.item}>
+                <NavLink exact to='/Knowlege' className = { navData => navData.isActive ? s.active : s.item }>База знаний</NavLink>
+            </div>
+
+            <div className={s.item}>
+                <NavLink exact to='/Comments' className = { navData => navData.isActive ? s.active : s.item }>Популярные вопросы</NavLink>
+            </div>
 
         </nav>
 
