@@ -97,7 +97,9 @@ export default App;
 
 В файле меню (Navbar.jsx) ввести:
 <div className={s.item}> <NavLink exact to='/Main' className = { navData => navData.isActive ? s.active : s.item }>Главная</NavLink></div>
-Предварительно установив и импортировав import { NavLink } from 'react-router-dom';
+
+Предварительно установив и импортировав: import { NavLink } from 'react-router-dom';
+Предварительно не забыть импортировать модули из css: import s from './Navbar.module.css';
 
 В файле Navbar.module.jsx оформить стили для .item (пассивная ссылка) и .active (активная ссылка):
 
