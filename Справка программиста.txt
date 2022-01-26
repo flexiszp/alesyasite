@@ -101,3 +101,14 @@ export default App;
 
 В файле Navbar.module.jsx оформить стили для .item (пассивная ссылка) и .active (активная ссылка):
 
+.item {
+    color: black;
+    
+.active {
+    color: green;
+    font-weight: 800;
+}
+
+a:hover {
+    color: red; /*ЭТО ПОДСВЕТКА ПРИ НАВЕДЕНИИ*/
+
