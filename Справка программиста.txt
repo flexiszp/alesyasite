@@ -1,0 +1,103 @@
+/* 1. Модули css (создание уникальных классов): */
+
+import s from './Dialogs.module.css';
+
+	/* и применяем:  */
+
+const Dialogs = (props) => {
+    return (
+
+        <div className={s.dia}>Dialogs</div>
+
+    )
+}
+
+	/* а в Dialogs.module.css сидит класс dia: */
+
+.dia {
+	
+	color: black;
+}
+
+_______________________________
+
+/* 2. Props func: */
+
+В функции вписываем в скобках props и применяем входящие данные в div:
+
+const Post = (props) => {
+
+    return (
+
+        <div className={s.item}>
+            <img src='https://encrypted-tbn0.com/>
+
+            <div className={s.one_post}>
+                {props.message} /* Применяем данные от message */
+            </div>
+
+            <div>
+                <span>like {props.like_count} </span> /* Применяем данные от like_count */
+            </div>
+
+        </div >
+
+    )
+
+}
+
+	/* а входящие данные пишем в файле где применяем компоненту: */
+	
+	
+			<div>
+
+                <Post message='HI, how are you?' like_count='3' />
+                <Post message='HI men yeahh?' like_count='5' />
+
+            </div>
+
+_______________________________
+
+
+/* 3. Routing */
+
+Устанавливаем модуль react-route-dom:
+
+npm install react-router-dom -save (по камасутре, с записью в package.json - "react-router-dom": "^6.2.1",)
+затем на других компах нужно доустановить модуль react-router-dom через npm install.
+
+npm install react-router-dom@6 (по документации)
+
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";	/* Обазательно */
+
+function App() {
+  return (
+  
+	<BrowserRouter> /* Обазательно */
+	
+		<div class='app-wrapper-content'>
+		
+		<Routes>	/* Обазательно */
+			
+			<Route path='/Profile' element={<Profile />} />	/* Отрисовываем компоненту по пути */
+			<Route path='/Dialogs' element={<Dialogs />} />	/* Отрисовываем компоненту по пути */
+			
+		</Routes>	/* Обазательно */
+		
+		</div>
+			
+	</BrowserRouter>)	/* Обазательно */
+}
+
+
+export default App;
+
+/* 3.1. Active Link*/
+
+В файле меню (Navbar.jsx) ввести:
+<div className={s.item}> <NavLink exact to='/Main' className = { navData => navData.isActive ? s.active : s.item }>Главная</NavLink></div>
+Предварительно установив и импортировав import { NavLink } from 'react-router-dom';
+
+В файле Navbar.module.jsx оформить стили для .item (пассивная ссылка) и .active (активная ссылка):
+
