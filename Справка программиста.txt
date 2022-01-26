@@ -93,7 +93,7 @@ function App() {
 
 export default App;
 
-/* 3.1. Active Link*/
+/* 3.1. Active Link. Документация - https://v5.reactrouter.com/web/api/NavLink */
 
 В файле меню (Navbar.jsx) ввести:
 <div className={s.item}> <NavLink exact to='/Main' className = { navData => navData.isActive ? s.active : s.item }>Главная</NavLink></div>

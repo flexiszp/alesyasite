@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
 
             <div className={s.item}>
-                <NavLink exact to='/Comments' className = { navData => navData.isActive ? s.active : s.item }>Популярные вопросы</NavLink>
+                <NavLink exact to='/Reviews' className = { navData => navData.isActive ? s.active : s.item }>Отзывы</NavLink>
             </div>
 
         </nav>
