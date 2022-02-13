@@ -1,5 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
+
+const Dialogitem = (props) => {
+
+    let path = '/Dialogs/' + props.id;
+
+    return (
+        <div className={s.dia}><NavLink to={path}>{props.name}</NavLink></div>
+
+    )
+}
+
+const Messageitem = (props) => {
+
+    return (
+        <div className={s.dia}>{props.mes}</div>
+    )
+}
 
 const Dialogs = (props) => {
     return (
@@ -7,15 +25,17 @@ const Dialogs = (props) => {
         <div className={s.dialogs}>
 
             <div className={s.dialogitems}>
-                <div className={s.dia + ' ' + s.active}>Димыч</div>
-                <div className={s.dia}>Юрчелло</div>
-                <div className={s.dia}>Стасямба</div>
+                <Dialogitem name='Димыч' id='1' />
+                <Dialogitem name='Юрмэлло' id='2' />
+                <Dialogitem name='Стасямба' id='3' />
+                <Dialogitem name='ДэЛавер' id='4' />
             </div>
 
             <div className={s.messages}>
-                <div className={s.dia}>How are you?</div>
-                <div className={s.dia}>I am fine thanks</div>
-                <div className={s.dia}>Not at all</div>
+                <Messageitem mes='How are you?' />
+                <Messageitem mes='How are they?' />
+                <Messageitem mes='How are we?' />
+                <Messageitem mes='How are fuck?' />
             </div>
 
         </div>

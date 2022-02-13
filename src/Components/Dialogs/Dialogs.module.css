@@ -14,8 +14,6 @@
     padding: 10px;
 }
 
-.dialogitems {}
-
 .dialogitems .active {
     color: magenta;
 }
