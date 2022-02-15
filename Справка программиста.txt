@@ -119,3 +119,33 @@ export default App;
 a:hover {
     color: red; /*ЭТО ПОДСВЕТКА ПРИ НАВЕДЕНИИ*/
 
+/* 4. Данные в массиве для компонент:
+
+    let messagesdata = [
+        { id: 1, message: '-> How are you?' },
+        { id: 2, message: '-> How are they?' }
+
+    Теперь используем их в компоненте:
+
+        <div className={s.messages}>
+                <Messageitem mes={messagesdata[0].message} id={messagesdata[0].id} />
+                <Messageitem mes={messagesdata[1].message} id={messagesdata[1].id} />
+        </div>
+
+
+/* 4.1 Массив данных --> массив разметки (метод массива MAP):
+
+    let dialogsdata = [                 ЭТО ЕСТЬ НАШ МАССИВ ДАННЫХ
+        { id: 1, name: 'Димыч' },
+        { id: 2, name: 'Юрмэлло' },
+        { id: 3, name: 'Стасямба' },
+        { id: 4, name: 'ДэЛавер' },
+        { id: 5, name: 'Илиолик' }
+    ]
+
+            ПРЕОБРАЗУЕМ МАССИВ ДАННЫХ В МАССИВ КОМПОНЕНТ,КОТОРЫЕ НУЖНО ОТРИСОВАТЬ.
+            И ПЕРЕДАЕМ ПРОПСЫ - NAME, ID ИЗ МАССИВА ДАННЫХ.
+
+    let dialogselements = dialogsdata.map
+    (dialog => <Dialogitem name={dialog.name} id={dialog.id} />);
+

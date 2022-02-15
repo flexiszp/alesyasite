@@ -5,7 +5,9 @@ import { NavLink } from 'react-router-dom';
 const Navitem = (props) => {
 
     return (
-        <div className={s.item}><NavLink exact to={props.pathto} className={navData => navData.isActive ? s.active : s.item}>{props.pagename}</NavLink></div>
+        <div className={s.item}>
+            <NavLink exact to={props.pathto} className={navData => navData.isActive ? s.active : s.item}>{props.pagename}</NavLink>
+        </div>
 
     )
 }
