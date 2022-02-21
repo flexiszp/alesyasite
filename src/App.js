@@ -12,63 +12,60 @@ function App(props) {
 
     return (
 
-            <
-            BrowserRouter >
+        <
+        BrowserRouter >
 
-            <
-            div className = "wrapper" >
+        <
+        div className = "wrapper" >
 
-            <
-            Header / >
-            <
-            Navbar / > {
-                /* <div class='app-wrapper-content'><Dialogs /></div>
-                		<div class='app-wrapper-content'> <Profile /></div> */
-            }
+        <
+        Header / >
+        <
+        Navbar / >
 
-            <
-            div className = 'app-wrapper-content' >
+        <
+        div className = 'app-wrapper-content' >
 
-            <
-            Routes >
+        <
+        Routes >
 
+        <
+        Route path = '/Main'
+        element = { < Profile / > }
+        />  <
+        Route path = '/Dialogs'
+        element = { < Dialogs dialogs = { props.dialogs }
+            messages = { props.messages }
+            />}/ >
             <
-            Route path = '/Main'
-            element = { < Profile / > }
+            Route path = '/Contacts'
+            element = { < Contacts / > }
             /> <
-            Route path = '/Dialogs'
-            element = { < Dialogs dialogs = { props.dialogs }
-                messages = { props.messages }
-                />} / >
-                <
-                Route path = '/Contacts'
-                element = { < Contacts / > }
-                /> <
-                Route path = '/Prices'
-                element = { < Prices / > }
-                /> { /* <Route path='*' element={<Notfoundpage />} /> */ }
+            Route path = '/Prices'
+            element = { < Prices / > }
+            />  { /* <Route path='*' element={<Notfoundpage />} /> */ }
 
-                <
-                /Routes>
+            <
+            /Routes>
 
-                <
-                /div>
+            <
+            /div>
 
+            <
+            div className = 'New' > Персональная консультация < /div>  <
+            div className = 'New1' > Подбор персонала < /div>  <
+            div className = 'New2' > Социальная поддержка < /div>  <
+            div className = 'footer' > Контент футер < /div>
 
+            <
+            /div>
 
-                <
-                div className = 'New' > Персональная консультация < /div> <
-                div className = 'New1' > Подбор персонала < /div> <
-                div className = 'New2' > Социальная поддержка < /div> <
-                div className = 'footer' > Контент футер < /div>
+            <
+            /BrowserRouter>
 
-                <
-                /div>
-
-                <
-                /BrowserRouter>)
-            }
+        )
+    }
 
 
 
-            export default App;
+    export default App;
