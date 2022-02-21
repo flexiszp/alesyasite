@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div>
             <div className={s.item}>БИЗНЕС-КОНСУЛЬТАНТ ЗАПОРОЖЬЕ</div><br />

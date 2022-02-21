@@ -1,53 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
-
-const Dialogitem = (props) => {
-
-    let path = '/Dialogs/' + props.id;
-
-    return (
-        <div className={s.dia}><NavLink to={path}>{props.name}</NavLink></div>      /* ЭТО ССЫЛКА И ПУТЬ */
-
-    )
-}
-
-const Messageitem = (props) => {
-
-    return (
-        <div className={s.dia}>{props.mes}</div>        /* ЭТО ПРОПИСАНО СООБЩЕНИЕ */
-    )
-}
-
+import Dialogitem from './Dialogitem/Dialogitem.jsx';
+import Message from './Message/Message.jsx';
 
 const Dialogs = (props) => {
 
-    /* МАССИВ ДАННЫХ: */
+       /* МАССИВ КОМПОНЕНТОВ: */
 
-    let dialogs = [
-        { id: 1, name: 'Димыч' },
-        { id: 2, name: 'Юрмэлло' },
-        { id: 3, name: 'Стасямба' },
-        { id: 4, name: 'ДэЛавер' },
-        { id: 5, name: 'Илиолик' }
-    ]
-
-    let messages = [
-        { id: 1, message: '-> How are you?' },
-        { id: 2, message: '-> How are they?' },
-        { id: 3, message: '-> How are we?' },
-        { id: 4, message: '-> How are fuck?' },
-        { id: 5, message: '-> How are fuck niger?' }
-
-    ]
-
-    /* МАССИВ КОМПОНЕНТОВ: */
-
-    let dialogselements = dialogs.map
+    let dialogselements = props.dialogs.map
         (d => <Dialogitem name={d.name} id={d.id} />);
 
-    let messageelements = messages.map
-        (m => <Messageitem mes={m.message} id={m.id} />);
+    let messageelements = props.messages.map
+        (m => <Message mes={m.message} id={m.id} />);
 
 
 
